@@ -14,3 +14,20 @@ String.prototype.geohashToRGB = function (alpha) {
     }
     return 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha + ')';
 }
+
+
+String.prototype.geohashToAttack25 = function (alpha) {
+    let attacks = [
+        'rgba(255,179,180,'+alpha||1+')',
+        'rgba(144,197,255,'+alpha||1+')',
+        'rgba(255,255,255,'+alpha||1+')',
+        'rgba(181,227,154,'+alpha||1+')'
+    ];
+    let materials = '0123456789abcdefghijklmnopqrstuvwxyz';
+
+    var j = 0;
+    for (var i=0; i<this.length; i++) {
+        j += materials.indexOf(this[i])
+    }
+    return attacks[j%attacks.length];
+}
