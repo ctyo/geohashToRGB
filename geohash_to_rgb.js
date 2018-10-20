@@ -17,11 +17,14 @@ String.prototype.geohashToRGB = function (alpha) {
 
 
 String.prototype.geohashToAttack25 = function (alpha) {
+    if (!alpha) {
+        alpha = 1;
+    }
     let attacks = [
-        'rgba(255,179,180,'+alpha||1+')',
-        'rgba(144,197,255,'+alpha||1+')',
-        'rgba(255,255,255,'+alpha||1+')',
-        'rgba(181,227,154,'+alpha||1+')'
+        'rgba(255,179,180,'+alpha+')',
+        'rgba(144,197,255,'+alpha+')',
+        'rgba(255,255,255,'+alpha+')',
+        'rgba(181,227,154,'+alpha+')'
     ];
     let materials = '0123456789abcdefghijklmnopqrstuvwxyz';
 
