@@ -1,7 +1,20 @@
 # gethashToRGB
 ジオハッシュ文字列をよろしくな色にします。
 
-色がつくと綺麗
+usage
+```
+# load script tag or import geohash_to_rgb.js
+
+var geohash = 'xn1rc';
+
+# 適当な色
+geohash.geohashToRGB();
+# アタック25な色(透過)
+geohash.geohashToAttack25(0.5);
+
+```
+
+適当な色
 
 ![sample1](https://user-images.githubusercontent.com/1971086/46902639-949d7a00-cf03-11e8-8056-37159b84e9c1.png)
 
