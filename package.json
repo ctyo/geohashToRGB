@@ -1,0 +1,22 @@
+{
+  "name": "geohashtorgb",
+  "version": "1.0.0",
+  "description": "convert geohash to rbg color",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctyo/geohashToRGB.git"
+  },
+  "author": "ctyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ctyo/geohashToRGB/issues"
+  },
+  "homepage": "https://github.com/ctyo/geohashToRGB#readme"
+}
