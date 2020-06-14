@@ -1,16 +1,18 @@
 # gethashToRGB
 ジオハッシュ文字列をよろしくな色にします。
 
+[![npm version](https://badge.fury.io/js/geohashtorgb.svg)](https://badge.fury.io/js/geohashtorgb)
+
 usage
 ```
-# load script tag or import geohash_to_rgb.js
+var geohashToRGB = require("../index")
 
 var geohash = 'xn1rc';
 
 # 適当な色
-geohash.geohashToRGB();
+geohashToRGB.geohashToRGB(geohash)
 # アタック25な色(透過)
-geohash.geohashToAttack25(0.5);
+geohashToRGB.geohashToAttack25(geohash, 0.5)
 
 ```
 
