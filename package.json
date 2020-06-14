@@ -1,6 +1,6 @@
 {
   "name": "geohashtorgb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "convert geohash to rbg color",
   "main": "index.js",
   "directories": {

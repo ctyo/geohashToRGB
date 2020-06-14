@@ -12,7 +12,7 @@ module.exports.geohashToRGB = function (geohash, alpha) {
     for (var i = 0; i < geohash.length; i++) {
         rgb[i % 3] = toRGBNumber(geohash[i]);
     }
-    return 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha + ')';
+    return 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha + ')';
 }
 
 
